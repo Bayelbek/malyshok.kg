@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+
+.OurMission{
+    font-family: 'PT Serif', serif;
+}
+
+.chapter {
+    font-family: 'PT Serif', serif;
+    color: #155fa3;
+}
+
+p {
+    font-family: 'PT Serif',serif;
+    font-size: 17px;
+    font-weight: 400;
+}
