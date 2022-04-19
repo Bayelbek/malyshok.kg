@@ -18,6 +18,12 @@
     color: #155fa3;
 }
 
+.chapter_home {
+    font-family: 'PT Serif', serif;
+    color: #155fa3;
+    text-align: center;
+}
+
 p {
     font-family: 'PT Serif',serif;
     font-size: 17px;

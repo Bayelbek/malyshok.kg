@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Container, Nav, Navbar, NavDropdown, NavLink} from "react-bootstrap";
-import logo from '../image/malyshok_edu_logo.jpg'
+import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
 import '../styles/NavbarTop.css';
 
 const NavbarTop = () => {
