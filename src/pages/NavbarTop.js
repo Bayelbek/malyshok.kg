@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Container, Nav, Navbar, NavDropdown, NavLink} from "react-bootstrap";
 import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
 import '../styles/NavbarTop.css';
+import ImgCarousel from "../containers/ImgCarousel";
 
 const NavbarTop = () => {
     return (
@@ -22,6 +23,7 @@ const NavbarTop = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <ImgCarousel/>
         </div>
     );
 };
