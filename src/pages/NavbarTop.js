@@ -9,8 +9,8 @@ const NavbarTop = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                        <NavLink><img src={logo} className="logo"/></NavLink>
-                        <Navbar.Brand>ОК «МАЛЫШОК»</Navbar.Brand>
+                        <NavLink href='/'><img src={logo} className="logo"/></NavLink>
+                        <Navbar.Brand href='/' style={{cursor: "pointer"}}>ОК «МАЛЫШОК»</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="m-lg-auto">
