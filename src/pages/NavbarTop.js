@@ -1,9 +1,9 @@
 import React from 'react';
-import {Button, Container, Nav, Navbar, NavDropdown, NavLink} from "react-bootstrap";
+import {Container, Nav, Navbar, NavLink} from "react-bootstrap";
 import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
 import '../styles/NavbarTop.css';
-import HomePage from "./HomePage";
-import {Route, BrowserRouter as Router, Routes, Link} from "react-router-dom";
+import Example from './Example'
+
 const NavbarTop = () => {
     return (
         <div>
@@ -19,8 +19,7 @@ const NavbarTop = () => {
                                 <Nav.Link href="teachers">Учителя</Nav.Link>
                                 <Nav.Link href="educationPage">Обучение</Nav.Link>
                             </Nav>
-                            <Nav.Link href="home"><Button style={{backgroundColor: '#0466ad'}}>ПОСТУПИТЬ В
-                                САДИК</Button></Nav.Link>
+                            <Nav.Link><Example /></Nav.Link>
                         </Navbar.Collapse>
                 </Container>
             </Navbar>
