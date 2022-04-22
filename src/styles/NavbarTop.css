@@ -7,6 +7,7 @@
     width: 55px;
     height: 55px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .OurMission{
@@ -25,7 +26,17 @@
 }
 
 p {
-    font-family: 'PT Serif',serif;
+    font-family: 'PT Serif', serif;
     font-size: 17px;
     font-weight: 400;
+}
+
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+    .textmedia {
+        font-size: 14px;
+    }
+    .headerText{
+        font-size: 20px;
+    }
 }
