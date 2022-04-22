@@ -1,5 +1,5 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap'
+import {Carousel, Col, Container, Row} from 'react-bootstrap'
 import Contacts from '../containers/Сontacts'
 
 const TeachersPage = () => {
@@ -25,6 +25,124 @@ const TeachersPage = () => {
             </div>
           </div>
         </div>
+        <section className={'TeacherBox'}>
+          <div className={'EducContainer'}>
+            <h2 className={'TeacherTitle'}>НАЧАЛЬНАЯ ШКОЛА</h2>
+            <div className={'row teacher_list'}>
+              <Container>
+                <Row>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </div>
+        </section>
+        <section className={'TeacherBox'}>
+          <div className={'EducContainer'}>
+            <h2 className={'TeacherTitle'}>Детский Сад</h2>
+            <div className={'row teacher_list'}>
+              <Container>
+                <Row>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col sm={4} md={3} xs={6} className={'mt-5'}>
+                    <div className={'TeacherImg'}>
+                      <div className={'TeacherItem'}>
+                        <div className={'TeacherName'}>Нааматова Венера Сарылбековна</div>
+                        <div className={'TeacherText'}>учитель гос. языка высшей категории, Отличник Образования, директор начальной школы</div>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </div>
+        </section>
         <Contacts />
       </>
     );

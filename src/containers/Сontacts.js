@@ -60,12 +60,8 @@ const Contacts = () => {
                         </div>
                     </Col>
                     <Col style={{padding: 0, margin: 0}} xs={12} md={6}>
-
-                        <Image className={'h-100'} src={contacImg}
-                               style={{width: '100%', height: 500, objectFit: "cover"}}/>
-
+                        <Image className={'h-100'} src={contacImg} style={{width: '100%', height: 500, objectFit: "cover"}}/>
                     </Col>
-
                     <Col sm={10} md={6} style={{marginTop: 50}}>
                         <div data-aos="fade-up" className={'h-100'}>
                             <Card style={{backgroundColor: '#f5f5f5', borderRadius: 0, border: "none"}}
@@ -84,7 +80,6 @@ const Contacts = () => {
                             </Card>
                         </div>
                     </Col>
-
                     <Col sm={10} md={6} style={{marginTop: 50}}>
                         <div data-aos="fade-up" className={'h-100'}>
                             <Card style={{backgroundColor: '#f5f5f5', borderRadius: 0, border: "none"}}
@@ -104,7 +99,6 @@ const Contacts = () => {
                     </Col>
                 </Row>
             </div>
-
             <div style={{
                 height: '100%',
                 backgroundColor: '#ebebeb',
