@@ -128,7 +128,7 @@ const AosText = () => {
                     </Col>
                 </Row>
             </Container>
-            <CaruselGroup/>
+            {/*<CaruselGroup/>*/}
         </div>
     );
 };

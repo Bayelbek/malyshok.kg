@@ -253,7 +253,7 @@ const HomeText = () => {
                     </div>
                 </div>
             </Container>
-            <Contacts/>
+            {/*<Contacts/>*/}
         </div>
     );
 };

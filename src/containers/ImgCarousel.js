@@ -35,9 +35,9 @@ const ImgCarousel = () => {
                         </Carousel.Item>
                     </Carousel>
                 </div>
-                <RibbonText/>
+                {/*<RibbonText/>*/}
             </div>
-            <AosText/>
+            {/*<AosText/>*/}
         </div>
     );
 };

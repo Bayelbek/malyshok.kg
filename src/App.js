@@ -1,10 +1,22 @@
 import React from "react";
 import NavbarTop from "./pages/NavbarTop";
+import {Route, Routes} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import KindergartenPage from "./pages/KindergartenPage";
+import EducationPage from "./pages/EducationPage";
+import TeachersPage from "./pages/TeachersPage";
+
 
 function App() {
     return (
         <div className="App">
             <NavbarTop/>
+                <Routes>
+                    <Route  path="/" element={<HomePage />} />
+                    <Route  path="teachers" element={<TeachersPage />} />
+                    <Route  path="educationPage" element={<EducationPage />} />
+                    <Route  path="kindergartenPage" element={<KindergartenPage />} />
+                </Routes>
         </div>
     );
 }

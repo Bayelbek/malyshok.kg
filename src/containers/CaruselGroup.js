@@ -129,7 +129,7 @@ const CaruselGroup = () => {
                     </Carousel>
                 </div>
             </div>
-            <HomeText/>
+            {/*<HomeText/>*/}
         </div>
 );
 };
