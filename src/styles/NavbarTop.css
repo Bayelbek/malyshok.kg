@@ -114,8 +114,61 @@ p {
     line-height: 22px;
     color: #555;
 }
+.TeacherBox {
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 30px;
+    padding: 60px 0;
+}
+.TeacherTitle {
+    position: relative;
+    padding: 0 0 50px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 34px;
+    color: #333;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.TeacherImg{
+    background-image: url("https://abiturient.kg/wp-content/uploads/2020/08/Naamatova-Venera-Sarylbekovna-333x500.jpg");
+    position: relative;
+    padding-bottom: 150%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.TeacherItem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5px;
+    background: #333;
+    background: rgba(0,0,0,.6);
+}
+.TeacherName {
+    padding: 0 25px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+.TeacherText {
+    min-height: 40px;
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
 
-@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
     .EducationBread {
         padding: 6px 0;
         font-size: 12px;
@@ -148,11 +201,62 @@ p {
     .EducPageText {
         font-size: 12px;
     }
+    .TeacherName {
+        padding: 0 25px;
+        font-size: 13px;
+        line-height: 11px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+    }
+    .TeacherText {
+        min-height: 40px;
+        margin-top: 10px;
+        font-size: 11px;
+        line-height: 12px;
+        color: #fff;
+        text-align: center;
+    }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1015px), only screen and (min-device-width: 768px) and (max-device-width: 1015px) {
     .EducOverlay {
         left: 0;
         width: 60%;
+    }
+    .TeacherName {
+        padding: 0 25px;
+        font-size: 13px;
+        line-height: 11px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+    }
+    .TeacherText {
+        min-height: 40px;
+        margin-top: 10px;
+        font-size: 11px;
+        line-height: 12px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px), only screen and (min-device-width: 550px) and (max-device-width: 768px) {
+    .TeacherName {
+        padding: 0 25px;
+        font-size: 13px;
+        line-height: 11px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+    }
+    .TeacherText {
+        min-height: 40px;
+        margin-top: 10px;
+        font-size: 11px;
+        line-height: 12px;
+        color: #fff;
+        text-align: center;
     }
 }
 
