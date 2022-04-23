@@ -35,7 +35,7 @@ function Example() {
                         <Form.Control type="text" placeholder="Ваше имя *"/>
                       </Form.Group>
                     </Form>
-                    <Form className={'mb-2'}>
+                    <Form className={'mb-4'}>
                       <Form.Group controlId="formBasicEmail">
                         <Form.Control type="number" placeholder="Ваш телефон *"/>
                       </Form.Group>
