@@ -19,7 +19,7 @@ const TeachersPage = () => {
           <div className={'EducationBread'}>
             <div className={'EducContainer'}>
                 <span>
-                  <a href={'https://abiturient.kg/'} style={{color:'gray'}}>Главная    > </a>
+                  <a href={'https://abiturient.kg/'} style={{color:'gray'}}>Главная     </a>
                   <span className={'EducBreadCrumbs'} aria-current={'page'}>Учителя</span>
                 </span>
             </div>

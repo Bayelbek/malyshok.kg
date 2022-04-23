@@ -247,9 +247,12 @@ const HomeText = () => {
                                         раскрывать в ребёнке как можно раньше.
                                     </Card.Text>
                                     <Button variant="outline-primary">ПОДРОБНЕЕ</Button>
+
                                 </Card.Body>
                             </Col>
                         </Row>
+                        
+
                     </div>
                 </div>
             </Container>

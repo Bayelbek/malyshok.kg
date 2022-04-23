@@ -9,7 +9,7 @@ const NavbarTop = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                        <NavLink href='/'><img src={logo} className="logo"/></NavLink>
+                        <NavLink href='/'><img src={logo} className="logo" alt=''/></NavLink>
                         <Navbar.Brand href='/' style={{cursor: "pointer"}}>ОК «МАЛЫШОК»</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">

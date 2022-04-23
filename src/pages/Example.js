@@ -1,13 +1,22 @@
 import React, {useState} from 'react'
 import {Button, Col, Form, Image, Modal, Row} from 'react-bootstrap'
 import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
-
+import axios from 'axios'
 function Example() {
   const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const [name , setName] = useState('');
+  const [phone , setPhone] = useState('');
+  const [option , setOption] = useState('');
+  const handleClose = () =>{
+    setShow(false)
+    axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
+        params:{
+          chat_id:'868287401',
+          text:`Имя:${name}\n Номер: ${phone}\n Отделение: ${option}`
+        }
+    })
+  }
   return (
     <>
       <Button style={{backgroundColor: '#0466ad'}} onClick={handleShow}>
@@ -31,20 +40,20 @@ function Example() {
                 <div style={{display: "flex", justifyContent: 'center'}}>
                   <Col xs={12} md={8}>
                     <Form className={'mb-2'}>
-                      <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Control type="text" placeholder="Ваше имя *"/>
+                      <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Control type="text" placeholder="Ваше имя *" onChange={e => setName(e.target.value)}/>
                       </Form.Group>
                     </Form>
                     <Form className={'mb-2'}>
-                      <Form.Group controlId="formBasicEmail">
-                        <Form.Control type="number" placeholder="Ваш телефон *"/>
+                      <Form.Group controlId="formBasicNumber">
+                        <Form.Control type="number" placeholder="Ваш телефон *" onChange={e => setPhone(e.target.value)}/>
                       </Form.Group>
                     </Form>
                     <p>Выберите отделение</p>
-                    <Form.Select aria-label="Default select example" className={'mb-3'}>
-                      <option>Начальная школа</option>
-                      <option value="1">Детский сад</option>
-                      <option value="2">Старшая школа</option>
+                    <Form.Select aria-label="Default select example" className={'mb-3'} onChange={e => setOption(e.target.value)} >
+                      <option value='Начальная школа'>Начальная школа</option>
+                      <option value="Детский сад">Детский сад</option>
+                      <option value="Старшая школа">Старшая школа</option>
                     </Form.Select>
                     <div style={{display: "flex", justifyContent: "center"}}>
                       <Button className="btn" style={{
