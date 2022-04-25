@@ -13,11 +13,11 @@ function Example() {
     axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
         params:{
           chat_id:'868287401',
-          text:`Имя:${name}\n Номер: ${phone}\n Отделение: ${option}`
+          text:`Заявка на звонок:\n\nИмя:${name}\nНомер:+996${phone.slice(1)}\nОтделение: ${option}`
         }
     })
   }
-  
+  const singUp_next = name.length <= 3 || phone.length !== 10 
   return (
     <>
       <Button style={{backgroundColor: '#0466ad'}} onClick={handleShow}>
@@ -42,12 +42,20 @@ function Example() {
                   <Col xs={12} md={8}>
                     <Form className={'mb-2'}>
                       <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Control type="text" placeholder="Ваше имя *" onChange={e => setName(e.target.value)}/>
+                        <Form.Control 
+                        type="text" 
+                        placeholder="Ваше имя *"
+                         onChange={e => setName(e.target.value)}
+                         />
                       </Form.Group>
                     </Form>
                     <Form className={'mb-2'}>
                       <Form.Group controlId="formBasicNumber">
-                        <Form.Control type="number" placeholder="Ваш телефон *" onChange={e => setPhone(e.target.value)}/>
+                        <Form.Control 
+                        type="number" 
+                        placeholder="Ваш телефон *" 
+                        onChange={e => setPhone(e.target.value)}
+                        />
                       </Form.Group>
                     </Form>
                     <p>Выберите отделение</p>
@@ -66,7 +74,9 @@ function Example() {
                         paddingRight: 40,
                         paddingTop: 10,
                         paddingBottom: 10
-                      }} onClick={handleClose}>ОСТАВИТЬ ЗАЯВКУ
+                      }} 
+                      disabled={singUp_next}
+                      onClick={handleClose}>ОСТАВИТЬ ЗАЯВКУ
                       </Button>
                     </div>
                   </Col>

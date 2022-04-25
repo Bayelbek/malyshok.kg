@@ -1,12 +1,21 @@
-import React, {useState} from "react";
-import {Button, Card, Col, Container, Form, Image, InputGroup, NavLink, Row} from "react-bootstrap";
+import React, {useState} from 'react'
+import {Button, Card, Col, Form, Image, Row} from "react-bootstrap";
 import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
 import contacImg from '../Image/contact/photo_2022-04-15_15-42-46.jpg'
 import {FaMapMarkerAlt} from 'react-icons/fa';
 import {FiPhone} from 'react-icons/fi';
-
+import axios from 'axios'
 const Contacts = () => {
-
+const [name , setName] = useState('');
+const [phone , setPhone] = useState('');
+const handleCollo = () =>{
+  axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
+      params:{
+        chat_id:'868287401',
+        text:`Заявка на звонок:\nИмя:${name}\nНомер:+996${phone}`
+      }
+  })
+}
     return (
         <>
             <div data-aos="fade-up"
@@ -28,19 +37,25 @@ const Contacts = () => {
                                 <div style={{display: "flex", justifyContent: 'center'}}>
                                     <Col xs={8} md={8}>
                                         <Form className={'mb-5'}>
-                                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                                <Form.Control style={{paddingTop: 10, paddingBottom: 10}} type="text"
-                                                              placeholder="Ваше имя *"/>
+                                            <Form.Group className="mb-3"
+                                           controlId="formBasicEmail">
+                                                <Form.Control
+                                                 style={{paddingTop: 10,
+                                                 paddingBottom: 10}} type="text"
+                                                 placeholder="Ваше имя *"
+                                                 onChange={e => setName(e.target.value)}/>
                                             </Form.Group>
                                         </Form>
                                         <Form className={'mb-5'}>
-                                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                                <Form.Control style={{paddingTop: 10, paddingBottom: 10}} type="number"
-                                                              placeholder="Ваш телефон *"/>
+                                            <Form.Group className="mb-3" 
+                                            controlId="formBasicEmail">
+                                                <Form.Control
+                                                 style={{paddingTop: 10, 
+                                                 paddingBottom: 10}} type="number"
+                                                 placeholder="Ваш телефон *"
+                                                 onChange={e => setPhone(e.target.value)}/>
                                             </Form.Group>
                                         </Form>
-
-
                                         <div style={{display: "flex", justifyContent: "center"}}>
                                             <Button className="btn" style={{
                                                 backgroundColor: '#0466ad',
@@ -51,7 +66,7 @@ const Contacts = () => {
                                                 paddingRight: 40,
                                                 paddingTop: 10,
                                                 paddingBottom: 10
-                                            }}>ОСТАВИТЬ ЗАЯВКУ
+                                            }} onClick={handleCollo}>ОСТАВИТЬ ЗАЯВКУ
                                             </Button>
                                         </div>
                                     </Col>
