@@ -13,10 +13,15 @@ const handleCollo = () =>{
   axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
       params:{
         chat_id:'868287401',
-        text:`Заявка на звонок:\n\n Имя:${name}\nНомер:+996${phone}`
+        text:`Заявка на звонок:\n\nИмя:${name}\nНомер:+996${phone.slice(1)}`
       }
   })
+    setTimeout(function() {
+        setName('')
+        setPhone('')
+    },300)
 }
+    const singUp_next = name.length <= 3 || phone.length !== 10
     return (
       <>
         <div className={'EducationScreen'}>
@@ -33,7 +38,7 @@ const handleCollo = () =>{
           <div className={'EducationBread'}>
             <div className={'EducContainer'}>
                 <span>
-                  <a href={'#'} style={{color:'gray'}}>Главная</a>
+                  <a href='/' style={{color:'gray'}}>Главная</a>
                   <span className={'EducBreadCrumbs'} aria-current={'page'}>Сильное естественно-техническое образование</span>
                 </span>
             </div>
@@ -77,16 +82,18 @@ const handleCollo = () =>{
                                                  style={{paddingTop: 10,
                                                  paddingBottom: 10}} type="text"
                                                  placeholder="Ваше имя *"
+                                                 value={name}
                                                  onChange={e => setName(e.target.value)}/>
                                             </Form.Group>
                                         </Form>
                                         <Form className={'mb-5'}>
-                                            <Form.Group className="mb-3" 
+                                            <Form.Group className="mb-3"
                                             controlId="formBasicEmail">
                                                 <Form.Control
-                                                 style={{paddingTop: 10, 
+                                                 style={{paddingTop: 10,
                                                  paddingBottom: 10}} type="number"
                                                  placeholder="Ваш телефон *"
+                                                 value={phone}
                                                  onChange={e => setPhone(e.target.value)}/>
                                             </Form.Group>
                                         </Form>
@@ -102,7 +109,9 @@ const handleCollo = () =>{
                                                 paddingRight: 40,
                                                 paddingTop: 10,
                                                 paddingBottom: 10
-                                            }} onClick={handleCollo}>ОСТАВИТЬ ЗАЯВКУ
+                                            }} onClick={handleCollo}
+                                                    disabled={singUp_next}
+                                            >ОСТАВИТЬ ЗАЯВКУ
                                             </Button>
                                         </div>
                                     </Col>
@@ -167,14 +176,12 @@ const handleCollo = () =>{
                                 <hr style={{width: 170}}/>
                                 <div style={{display: 'flex', marginBottom: 15}}>
                                     <FaMapMarkerAlt style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
-                                    г. Бишкек, 720052,<br/>
-                                    пр. Мира, 12
+                                    г.Ош мкр Анар<br/>
                                 </div>
                                 <div style={{display: 'flex'}}>
                                     <FiPhone style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        0312 316 022<br/>
-                                        0557 477 070
+                                        +996 702 127 077<br/>
                                     </p>
                                 </div>
                             </div>
@@ -189,15 +196,13 @@ const handleCollo = () =>{
                                 <div style={{display: 'flex'}}>
                                     <FaMapMarkerAlt style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        г. Бишкек, 720052,<br/>
-                                        ул. Исанова 4-Б
+                                        г.Ош мкр Анар<br/>
                                     </p>
                                 </div>
                                 <div style={{display: 'flex'}}>
                                     <FiPhone style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        0312 316 370<br/>
-                                        0551 404 142
+                                        +996 702 127 077
                                     </p>
                                 </div>
                             </div>
@@ -212,14 +217,13 @@ const handleCollo = () =>{
                                 <div style={{display: 'flex'}}>
                                     <FaMapMarkerAlt style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        г. Бишкек,<br/>
-                                        Исанова-Боконбаева
+                                        г.Ош мкр Анар<br/>
                                     </p>
                                 </div>
                                 <div style={{display: 'flex'}}>
                                     <FiPhone style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        0551 404 142
+                                        +996 702 127 077
                                     </p>
                                 </div>
                             </div>
@@ -234,14 +238,13 @@ const handleCollo = () =>{
                                 <div style={{display: 'flex'}}>
                                     <FaMapMarkerAlt style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        г. Бишкек,<br/>
-                                        3 микрорайон
+                                        г.Ош мкр Анар<br/>
                                     </p>
                                 </div>
                                 <div style={{display: 'flex'}}>
                                     <FiPhone style={{marginTop: 5, marginRight: 10, color: '#2c4f87'}}/>
                                     <p>
-                                        0558 909 020
+                                        +996 702 127 077
                                     </p>
                                 </div>
                             </div>

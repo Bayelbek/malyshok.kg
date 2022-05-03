@@ -16,8 +16,12 @@ function Example() {
           text:`Заявка на звонок:\n\nИмя:${name}\nНомер:+996${phone.slice(1)}\nОтделение: ${option}`
         }
     })
+    setTimeout(function() {
+      setName('')
+      setPhone('')
+    },300)
   }
-  const singUp_next = name.length <= 3 || phone.length !== 10 
+  const singUp_next = name.length <= 3 || phone.length !== 10
   return (
     <>
       <Button style={{backgroundColor: '#0466ad'}} onClick={handleShow}>
@@ -42,18 +46,20 @@ function Example() {
                   <Col xs={12} md={8}>
                     <Form className={'mb-2'}>
                       <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Control 
-                        type="text" 
+                        <Form.Control
+                        type="text"
                         placeholder="Ваше имя *"
+                        value={name}
                          onChange={e => setName(e.target.value)}
                          />
                       </Form.Group>
                     </Form>
                     <Form className={'mb-2'}>
                       <Form.Group controlId="formBasicNumber">
-                        <Form.Control 
-                        type="number" 
-                        placeholder="Ваш телефон *" 
+                        <Form.Control
+                        type="number"
+                        placeholder="Ваш телефон *"
+                        value={phone}
                         onChange={e => setPhone(e.target.value)}
                         />
                       </Form.Group>
@@ -74,7 +80,7 @@ function Example() {
                         paddingRight: 40,
                         paddingTop: 10,
                         paddingBottom: 10
-                      }} 
+                      }}
                       disabled={singUp_next}
                       onClick={handleClose}>ОСТАВИТЬ ЗАЯВКУ
                       </Button>

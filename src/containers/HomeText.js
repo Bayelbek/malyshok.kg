@@ -251,12 +251,9 @@ const HomeText = () => {
                                 </Card.Body>
                             </Col>
                         </Row>
-                        
-
                     </div>
                 </div>
             </Container>
-            {/*<Contacts/>*/}
         </div>
     );
 };
