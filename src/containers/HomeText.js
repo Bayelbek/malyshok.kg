@@ -6,7 +6,7 @@ import logo3 from '../Image/logo/main_why_6.png'
 import logotext from '../Image/textlogo/main_education_1.jpg'
 import logotext2 from '../Image/textlogo/main_education_2.jpg'
 import logotext3 from '../Image/textlogo/main_education_3.jpg'
-import Contacts from "./Сontacts";
+
 
 const HomeText = () => {
     return (

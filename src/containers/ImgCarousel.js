@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Col, Form, Image, Modal, Row} from "react-bootstrap";
 import axios from "axios";
-import logo from "../Image/CaruselImg/malyshok_edu_logo.jpg";
 
 const ImgCarousel = () => {
     const [show, setShow] = useState(false);

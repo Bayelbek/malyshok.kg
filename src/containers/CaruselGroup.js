@@ -6,7 +6,7 @@ import img3 from '../Image/CaruselImg2/main_slide_3.jpg'
 import img4 from '../Image/CaruselImg2/main_slide_4.jpg'
 import img5 from '../Image/CaruselImg2/main_slide_5.jpg'
 import img6 from '../Image/CaruselImg2/main_slide_6.jpg'
-import HomeText from "./HomeText";
+
 
 const CaruselGroup = () => {
     let absolute;
