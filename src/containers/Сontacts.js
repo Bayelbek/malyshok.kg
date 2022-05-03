@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Button, Card, Col, Form, Image, Row} from "react-bootstrap";
-import logo from '../Image/CaruselImg/malyshok_edu_logo.jpg'
-import contacImg from '../Image/contact/photo_2022-04-15_15-42-46.jpg'
+import logo from '../images/CaruselImg/malyshok_edu_logo.jpg'
+import contacImg from '../images/contact/photo_2022-04-15_15-42-46.jpg'
 import {FaMapMarkerAlt} from 'react-icons/fa';
 import {FiPhone} from 'react-icons/fi';
 import axios from 'axios'
@@ -47,10 +47,10 @@ const handleCollo = () =>{
                                             </Form.Group>
                                         </Form>
                                         <Form className={'mb-5'}>
-                                            <Form.Group className="mb-3" 
+                                            <Form.Group className="mb-3"
                                             controlId="formBasicEmail">
                                                 <Form.Control
-                                                 style={{paddingTop: 10, 
+                                                 style={{paddingTop: 10,
                                                  paddingBottom: 10}} type="number"
                                                  placeholder="Ваш телефон *"
                                                  onChange={e => setPhone(e.target.value)}/>

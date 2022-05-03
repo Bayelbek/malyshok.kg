@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../Image/CaruselImg/2.jpg';
-import img2 from '../Image/CaruselImg/1.jpg';
-import img3 from '../Image/CaruselImg/5.jpg';
+import img1 from '../images/CaruselImg/2.jpg';
+import img2 from '../images/CaruselImg/1.jpg';
+import img3 from '../images/CaruselImg/5.jpg';
 import {Carousel} from "react-bootstrap";
 import RibbonText from "./ RibbonText";
 import AosText from "./AosText";

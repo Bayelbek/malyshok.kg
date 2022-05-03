@@ -1,11 +1,11 @@
 import React from 'react';
 import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import logo1 from '../Image/logo/main_why_2.png'
-import logo2 from '../Image/logo/main_why_4.png'
-import logo3 from '../Image/logo/main_why_6.png'
-import logotext from '../Image/textlogo/main_education_1.jpg'
-import logotext2 from '../Image/textlogo/main_education_2.jpg'
-import logotext3 from '../Image/textlogo/main_education_3.jpg'
+import logo1 from '../images/logo/main_why_2.png'
+import logo2 from '../images/logo/main_why_4.png'
+import logo3 from '../images/logo/main_why_6.png'
+import logotext from '../images/textlogo/main_education_1.jpg'
+import logotext2 from '../images/textlogo/main_education_2.jpg'
+import logotext3 from '../images/textlogo/main_education_3.jpg'
 import Contacts from "./Сontacts";
 
 const HomeText = () => {
@@ -251,7 +251,7 @@ const HomeText = () => {
                                 </Card.Body>
                             </Col>
                         </Row>
-                        
+
 
                     </div>
                 </div>
