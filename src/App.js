@@ -8,7 +8,7 @@ import TeachersPage from './pages/TeachersPage'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavbarTop/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>

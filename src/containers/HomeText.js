@@ -37,7 +37,7 @@ const HomeText = () => {
 
         <Row className={'justify-content-center mb-5'}>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card style={{backgroundColor: '#f5f5f5', borderRadius: 0, border: 'none'}}
                     className={'h-100'}>
@@ -53,7 +53,7 @@ const HomeText = () => {
             </div>
           </Col>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card
                 style={{
@@ -78,7 +78,7 @@ const HomeText = () => {
             </div>
           </Col>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card style={{backgroundColor: '#f5f5f5', borderRadius: 0, border: 'none'}}
                     className={'h-100'}>
@@ -96,7 +96,7 @@ const HomeText = () => {
             </div>
           </Col>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card style={{
                 backgroundColor: '#f5f5f5',
@@ -119,7 +119,7 @@ const HomeText = () => {
             </div>
           </Col>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card style={{backgroundColor: '#f5f5f5', borderRadius: 0, border: 'none'}}
                     className={'h-100'}>
@@ -136,7 +136,7 @@ const HomeText = () => {
             </div>
           </Col>
 
-          <Col sm={10} md={6} style={{marginBottom: 20}}>
+          <Col sm={10} md={6} lg={4} style={{marginBottom: 20}}>
             <div data-aos="fade-up" className={'h-100'}>
               <Card className={'d-flex align-items-center h-100'} style={{
                 backgroundColor: '#f5f5f5',

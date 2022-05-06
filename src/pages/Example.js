@@ -9,6 +9,7 @@ function Example() {
   const [name , setName] = useState('');
   const [phone , setPhone] = useState('');
   const [option , setOption] = useState('');
+
   const handleClose = () =>{
     setShow(false)
     axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
@@ -22,7 +23,9 @@ function Example() {
       setPhone('')
     },300)
   }
+
   const singUp_next = name.length <= 3 || phone.length !== 10
+
   return (
     <>
       <Button style={{backgroundColor: '#0466ad'}} onClick={handleShow}>
@@ -34,12 +37,12 @@ function Example() {
           <Col md={12} xs={12} style={{padding: 0}}>
             <div className={'h-100'}
                  style={{backgroundColor: '#ebebeb', paddingBottom: 40, paddingTop: 40, marginBottom: 10}}>
-              <div className={'mb-5'}>
-                <div style={{display: "flex", justifyContent: "center"}}>
+              <div className={'mb-4'}>
+                <div className={'mb-3'} style={{display: "flex", justifyContent: "center"}}>
                   <Image src={logo} style={{width: 100, borderRadius: '100%'}}/>
                 </div>
                 <h4 className="text-center">ОК «МАЛЫШОК»</h4>
-                <p className="text-center">Оставьте заявку и наш менеджер свяжется с Вами, чтобы записать
+                <p className="text-center text-muted">Оставьте заявку и наш менеджер свяжется с Вами, чтобы записать
                   ребенка на вводное тестирование</p>
               </div>
               <Row>
@@ -65,7 +68,7 @@ function Example() {
                         />
                       </Form.Group>
                     </Form>
-                    <p>Выберите отделение</p>
+                    <p className={'mb-1 mt-2 text-muted'}>Выберите отделение</p>
                     <Form.Select aria-label="Default select example" className={'mb-3'} onChange={e => setOption(e.target.value)} >
                       <option value='Начальная школа'>Начальная школа</option>
                       <option value="Детский сад">Детский сад</option>
@@ -83,7 +86,8 @@ function Example() {
                         paddingBottom: 10
                       }}
                       disabled={singUp_next}
-                      onClick={handleClose}>ОСТАВИТЬ ЗАЯВКУ
+                      onClick={handleClose}>
+                        ОСТАВИТЬ ЗАЯВКУ
                       </Button>
                     </div>
                   </Col>

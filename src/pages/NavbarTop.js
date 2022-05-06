@@ -12,14 +12,16 @@ const NavbarTop = () => {
           <NavLink href="/"><img src={logo} className="logo" alt=""/></NavLink>
           <Navbar.Brand href="/" style={{cursor: 'pointer'}}>ОК «МАЛЫШОК»</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse>
             <Nav className="m-lg-auto">
               <Nav.Link href="/">Главная</Nav.Link>
               <Nav.Link href="kindergartenPage">Детский сад</Nav.Link>
               <Nav.Link href="teachers">Учителя</Nav.Link>
               <Nav.Link href="educationPage">Обучение</Nav.Link>
             </Nav>
-            <Nav.Link><Example/></Nav.Link>
+            <Nav.Link>
+              <Example/>
+            </Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

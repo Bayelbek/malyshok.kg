@@ -30,12 +30,12 @@ const Contacts = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="3000"
-        style={{margin: 0}}
         className={'my-5'}
       >
         <Row>
           <Col md={6} xs={12} className={'p-0'}>
-            <div className={'h-100 d-flex justify-content-center align-items-center'} style={{backgroundColor: '#ebebeb', paddingBottom: 40, paddingTop: 40}}>
+            <div className={'h-100 d-flex justify-content-center align-items-center'}
+                 style={{backgroundColor: '#ebebeb', paddingBottom: 40, paddingTop: 40}}>
               <div>
                 <div>
                   <div className={'text-center mb-3'}>
@@ -48,48 +48,46 @@ const Contacts = () => {
                     ребенка на вводное тестирование
                   </p>
                 </div>
-                <Row>
-                  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <Col xs={8} md={8}>
-                      <Form className={'mb-3'}>
-                        <Form.Control
-                          className={'px-3 py-2'}
-                          type="text"
-                          placeholder="Ваше имя *"
-                          value={name}
-                          onChange={e => setName(e.target.value)}/>
-                        <Form.Control
-                          className={'px-3 py-2 mt-3'}
-                          type="number"
-                          placeholder="Ваш телефон *"
-                          value={phone}
-                          onChange={e => setPhone(e.target.value)}/>
-                      </Form>
-                      <div style={{display: 'flex', justifyContent: 'center'}}>
-                        <Button
-                          className="btn"
-                          style={{
-                            backgroundColor: '#0466ad',
-                            color: '#fff',
-                            fontSize: 16,
-                            fontWeight: '400',
-                            paddingLeft: 40,
-                            paddingRight: 40,
-                            paddingTop: 10,
-                            paddingBottom: 10,
-                          }}
-                          onClick={handleCollo}
-                          disabled={singUp_next}
-                        >ОСТАВИТЬ ЗАЯВКУ
-                        </Button>
-                      </div>
-                    </Col>
-                  </div>
+                <Row style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                  <Col xs={8} md={8}>
+                    <Form className={'mb-3'}>
+                      <Form.Control
+                        className={'px-3 py-2'}
+                        type="text"
+                        placeholder="Ваше имя *"
+                        value={name}
+                        onChange={e => setName(e.target.value)}/>
+                      <Form.Control
+                        className={'px-3 py-2 mt-3'}
+                        type="number"
+                        placeholder="Ваш телефон *"
+                        value={phone}
+                        onChange={e => setPhone(e.target.value)}/>
+                    </Form>
+                    <div style={{display: 'flex', justifyContent: 'center'}}>
+                      <Button
+                        className="btn"
+                        style={{
+                          backgroundColor: '#0466ad',
+                          color: '#fff',
+                          fontSize: 16,
+                          fontWeight: '400',
+                          paddingLeft: 40,
+                          paddingRight: 40,
+                          paddingTop: 10,
+                          paddingBottom: 10,
+                        }}
+                        onClick={handleCollo}
+                        disabled={singUp_next}
+                      >ОСТАВИТЬ ЗАЯВКУ
+                      </Button>
+                    </div>
+                  </Col>
                 </Row>
               </div>
             </div>
           </Col>
-          <Col style={{padding: 0}} xs={12} md={6}>
+          <Col className={'p-0'} xs={12} md={6}>
             <Image className={'h-100 w-100'} src={ContactImage} style={{objectFit: 'cover'}}/>
           </Col>
         </Row>
@@ -131,9 +129,7 @@ const Contacts = () => {
           </Col>
         </Row>
       </div>
-      <div style={{
-        backgroundColor: '#ebebeb',
-      }} className={'pt-5'}>
+      <div style={{backgroundColor: '#ebebeb'}} className={'pt-5'}>
         <div>
           <Row className={'d-flex justify-content-center text-center mb-5'}>
             <Col sm={6} md={4} lg={3} className={'justify-content-center d-flex flex-column align-items-center'}>
