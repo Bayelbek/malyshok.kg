@@ -1,13 +1,12 @@
 import React, {useState} from 'react'
-import {Container, FloatingLabel, Form, Card, Carousel, Row, Col, Image, Button} from 'react-bootstrap'
+import {Container, Form, Card, Carousel, Row, Col, Image, Button} from 'react-bootstrap'
 import kinder2 from '../images/CaruselImg/1.jpg'
 import kinder1 from '../images/CaruselImg/1.jpg'
 import kinder3 from '../images/CaruselImg/3.jpg'
 import kinder4 from '../images/CaruselImg/4.jpg'
 import kinder5 from '../images/CaruselImg/5.jpg'
-import Contacts from '../containers/Сontacts'
-import logo from "../Image/CaruselImg/malyshok_edu_logo.jpg";
-import contacImg from "../Image/contact/photo_2022-04-15_15-42-46.jpg";
+import logo from "../images/CaruselImg/malyshok_edu_logo.jpg";
+import contacImg from "../images/contact/photo_2022-04-15_15-42-46.jpg";
 import {FaMapMarkerAlt} from "react-icons/fa";
 import {FiPhone} from "react-icons/fi";
 import axios from "axios"

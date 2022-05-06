@@ -4,7 +4,7 @@ import AosText from '../containers/AosText'
 import CarouselGroup from '../containers/CaruselGroup'
 import HomeText from '../containers/HomeText'
 import Contacts from '../containers/Сontacts'
-import RibbonText from '../containers/ RibbonText'
+import RibbonText from '../containers/RibbonText'
 
 const HomePage = () => {
   return (
