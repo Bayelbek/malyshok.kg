@@ -15,9 +15,9 @@ const NavbarTop = () => {
           <Navbar.Collapse>
             <Nav className="m-lg-auto">
               <Nav.Link href="/">Главная</Nav.Link>
-              <Nav.Link href="kindergartenPage">Детский сад</Nav.Link>
-              <Nav.Link href="teachers">Учителя</Nav.Link>
-              <Nav.Link href="educationPage">Обучение</Nav.Link>
+              <Nav.Link href="/kindergarten">Детский сад</Nav.Link>
+              <Nav.Link href="/teachers">Учителя</Nav.Link>
+              <Nav.Link href="/education">Обучение</Nav.Link>
             </Nav>
             <Nav.Link>
               <Example/>
