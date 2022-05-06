@@ -6,7 +6,6 @@ import logo3 from '../images/logo/main_why_6.png'
 import logotext from '../images/textlogo/main_education_1.jpg'
 import logotext2 from '../images/textlogo/main_education_2.jpg'
 import logotext3 from '../images/textlogo/main_education_3.jpg'
-import Contacts from "./Сontacts";
 
 const HomeText = () => {
     return (
@@ -251,12 +250,9 @@ const HomeText = () => {
                                 </Card.Body>
                             </Col>
                         </Row>
-
-
                     </div>
                 </div>
             </Container>
-            {/*<Contacts/>*/}
         </div>
     );
 };

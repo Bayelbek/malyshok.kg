@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import 'aos/dist/aos.css';
 import Aos from "aos";
 import {Card, Col, Container, Row} from "react-bootstrap";
-import CaruselGroup from "./CaruselGroup";
 
 
 const AosText = () => {
@@ -46,7 +45,7 @@ const AosText = () => {
                                 <Card.Body>
                                     <Card.Title className={'chapter'}>Детский сад</Card.Title>
                                     <Card.Text>
-                                        При начальной школе «Абитуриент плюс» функционирует детский сад. У детского сада
+                                        При начальной школе ОК«Малышок» функционирует детский сад. У детского сада
                                         свое
                                         отдельно
                                         стоящее 2-х этажное здание. В детский сад принимаются дети, достигшие 4-х
@@ -128,7 +127,6 @@ const AosText = () => {
                     </Col>
                 </Row>
             </Container>
-            {/*<CaruselGroup/>*/}
         </div>
     );
 };

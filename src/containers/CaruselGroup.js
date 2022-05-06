@@ -1,15 +1,13 @@
 import React from 'react';
-import {Carousel, CarouselItem} from "react-bootstrap";
+import {Carousel} from "react-bootstrap";
 import img1 from '../images/CaruselImg2/main_slide_1.jpg'
 import img2 from '../images/CaruselImg2/main_slide_2.jpg'
 import img3 from '../images/CaruselImg2/main_slide_3.jpg'
 import img4 from '../images/CaruselImg2/main_slide_4.jpg'
 import img5 from '../images/CaruselImg2/main_slide_5.jpg'
 import img6 from '../images/CaruselImg2/main_slide_6.jpg'
-import HomeText from "./HomeText";
 
-const CaruselGroup = () => {
-    let absolute;
+const CarouselGroup = () => {
     return (
         <div>
             <div style={{marginBottom: 50}}>
@@ -129,9 +127,8 @@ const CaruselGroup = () => {
                     </Carousel>
                 </div>
             </div>
-            {/*<HomeText/>*/}
         </div>
 );
 };
 
-export default CaruselGroup;
+export default CarouselGroup;
