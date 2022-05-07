@@ -20,14 +20,6 @@ const TeachersPage = () => {
               </div>
             </div>
           </Carousel>
-          <div className={'EducationBread'}>
-            <div className={'EducContainer'}>
-                <span>
-                  <a href="/" style={{color: 'gray'}}>Главная     </a>
-                  <span className={'EducBreadCrumbs'} aria-current={'page'}>Учителя</span>
-                </span>
-            </div>
-          </div>
         </div>
         <section className={'TeacherBox'}>
           <div className={'EducContainer'}>

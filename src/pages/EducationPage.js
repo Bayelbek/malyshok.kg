@@ -9,7 +9,7 @@ import {FiPhone} from 'react-icons/fi'
 
 const EducationPage = () => {
   const [name , setName] = useState('');
-const [phone , setPhone] = useState('');
+  const [phone , setPhone] = useState('');
 const handleCollo = () =>{
   axios.get('https://api.telegram.org/bot5346125061:AAFtSCO-EQU22qkceOO7yCIIazfTd1aPvBI/sendMessage',{
       params:{
@@ -36,14 +36,6 @@ const handleCollo = () =>{
                 </div>
               </div>
           </Carousel>
-          <div className={'EducationBread'}>
-            <div className={'EducContainer'}>
-                <span>
-                  <a href='/' style={{color:'gray'}}>Главная</a>
-                  <span className={'EducBreadCrumbs'} aria-current={'page'}>Сильное естественно-техническое образование</span>
-                </span>
-            </div>
-          </div>
           <section className={'EducBoxContent'}>
             <div className={'EducContainer'}>
               <div className={'EducPageContent'}>

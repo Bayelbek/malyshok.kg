@@ -1,0 +1,17 @@
+[debug] [2022-05-07T11:21:52.808Z] ----------------------------------------------------------------------
+[debug] [2022-05-07T11:21:52.811Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-07T11:21:52.811Z] CLI Version:   10.8.0
+[debug] [2022-05-07T11:21:52.811Z] Platform:      win32
+[debug] [2022-05-07T11:21:52.812Z] Node Version:  v14.17.3
+[debug] [2022-05-07T11:21:52.813Z] Time:          Sat May 07 2022 17:21:52 GMT+0600 (Киргизия)
+[debug] [2022-05-07T11:21:52.813Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-07T11:21:52.946Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-07T11:21:52.946Z] > authorizing via signed-in user (bayel.durusbekov.kk@gmail.com)
+[debug] [2022-05-07T11:21:52.946Z] [iam] checking project malyshok-58f1f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-07T11:21:52.949Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/malyshok-58f1f:testIamPermissions [none]
+[debug] [2022-05-07T11:21:52.949Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/malyshok-58f1f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T11:21:54.369Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/malyshok-58f1f:testIamPermissions 200
+[debug] [2022-05-07T11:21:54.370Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/malyshok-58f1f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-07T11:21:54.374Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/malyshok-58f1f [none]
+[debug] [2022-05-07T11:21:55.055Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/malyshok-58f1f 200
